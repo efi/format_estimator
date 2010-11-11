@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 /**
  * 
- * Estimates the format of a Topic Map File.
+ * Estimates the format of a Topic Map File
  * 
  * @author Thomas Efer <mail@thomasefer.de>
  * 
