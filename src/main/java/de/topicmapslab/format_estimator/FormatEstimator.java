@@ -29,6 +29,7 @@ public class FormatEstimator {
 		CXTM,
 		JTM, JTM_1_0, JTM_1_1,
 		LTM, LTM_1_0, LTM_1_1, LTM_1_2, LTM_1_3,
+		RDF, RDF_N3, RDF_XML,
 		TM_JSON,
 		TM_XML,
 		XTM, XTM_1_0, XTM_1_1, XTM_2_0, XTM_2_1;		
@@ -42,6 +43,7 @@ public class FormatEstimator {
 				case CTM:   return t==CTM_1_0||t==CTM_PRE_1_0;
 				case JTM:   return t==JTM_1_0||t==JTM_1_1;
 				case LTM:   return t==LTM_1_0||t==LTM_1_1||t==LTM_1_2||t==LTM_1_3;
+				case RDF:   return t==RDF_N3||t==RDF_XML;
 				case XTM:   return t==XTM_1_0||t==XTM_1_1||t==XTM_2_0||t==XTM_2_1;
 				default:    return false; 
 		}}
@@ -57,12 +59,15 @@ public class FormatEstimator {
 		add(entry("DTD XML Topic Maps \\(XTM\\) 2[.]1", XTM_2_1));
 		add(entry("xmlns\\s*=\\s*[\"']http://www[.]topicmaps[.]org/xtm/1[.]0/", XTM_1_0));
 		add(entry("xtm1[.]dtd", XTM_1_0));
+		add(entry("@(base|prefix|keywords)",RDF_N3));
 		add(entry("version\\s*=\\s*[\"']2[.]0[\"']", XTM_2_0));
 		add(entry("version\\s*=\\s*[\"']2[.]1[\"']", XTM_2_1));
 		add(entry("\"?version\"?\\s*:\\s*\"1[.]0\"?", JTM_1_0));
 		add(entry("\"?version\"?\\s*:\\s*\"1[.]1\"?", JTM_1_1));
 		add(entry("\"?item_type\"?\\s*:\\s*\"", JTM));
 		add(entry("(\\s(ako|iko))|(%(prefix|mergemap))\\s", CTM_PRE_1_0));
+		add(entry("rdf:Description",RDF_XML));
+		add(entry("http://www[.]w3[.]org/1999/02/22-rdf-syntax-ns#",RDF));
 		add(entry("#VERSION \"1[.]3\"", LTM_1_3));
 		add(entry("#VERSION \"1[.]2\"", LTM_1_2));
 		add(entry("#VERSION \"1[.]1\"", LTM_1_1));
