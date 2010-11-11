@@ -3,8 +3,6 @@
  */
 package de.topicmapslab.format_estimator;
 
-import static org.junit.Assert.*;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -19,7 +17,7 @@ import org.junit.Test;
 import de.topicmapslab.format_estimator.FormatEstimator.Format;
 
 /**
- * @author uta
+ * @author Uta Schulze <uta.schulze@informatik.uni-leipzig.de>
  * 
  */
 public class FormatEstimatorTest {

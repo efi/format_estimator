@@ -9,6 +9,15 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 
+/**
+ * 
+ * Estimates the format of a Topic Map File.
+ * 
+ * @author Thomas Efer <mail@thomasefer.de>
+ * 
+ * Documented and managed by Uta Schulze <uta.schulze@informatik.uni-leipzig.de>
+ *
+ */
 public class FormatEstimator {
 
 	// Be sure to use the is() method for unversioned format checking!
