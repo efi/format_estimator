@@ -32,7 +32,7 @@ public class FormatEstimator {
 		RDF, RDF_N3, RDF_XML,
 		TM_JSON,
 		TM_XML,
-		XTM, XTM_1_0, XTM_1_1, XTM_2_0, XTM_2_1;		
+		XTM, XTM_1_0, XTM_1_1, XTM_2_0, XTM_2_1;
 		
 		// like equals() but with "supertype" matching
 		public boolean is(Format f) { Format t = this;
