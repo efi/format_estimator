@@ -58,6 +58,7 @@ public class FormatEstimator {
 		add(entry("DTD XML Topic Maps \\(XTM\\) 2[.]0", XTM_2_0));
 		add(entry("DTD XML Topic Maps \\(XTM\\) 2[.]1", XTM_2_1));
 		add(entry("xmlns\\s*=\\s*[\"']http://www[.]topicmaps[.]org/xtm/1[.]0/", XTM_1_0));
+		add(entry("xmlns:tm\\s*=\\s*[\"']http://psi[.]ontopia[.]net/xml/tm-xml/", TM_XML));
 		add(entry("xtm1[.]dtd", XTM_1_0));
 		add(entry("@(base|prefix|keywords)",RDF_N3));
 		add(entry("version\\s*=\\s*[\"']2[.]0[\"']", XTM_2_0));
